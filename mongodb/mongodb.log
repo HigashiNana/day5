@@ -1,0 +1,53 @@
+2017-03-05T11:42:12.158+0900 I CONTROL  [initandlisten] MongoDB starting : pid=8548 port=27017 dbpath=mongodb\data 64-bit host=higashinana-PC
+2017-03-05T11:42:12.167+0900 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-03-05T11:42:12.167+0900 I CONTROL  [initandlisten] db version v3.4.2
+2017-03-05T11:42:12.168+0900 I CONTROL  [initandlisten] git version: 3f76e40c105fc223b3e5aac3e20dcd026b83b38b
+2017-03-05T11:42:12.168+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-03-05T11:42:12.168+0900 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-03-05T11:42:12.169+0900 I CONTROL  [initandlisten] modules: none
+2017-03-05T11:42:12.169+0900 I CONTROL  [initandlisten] build environment:
+2017-03-05T11:42:12.170+0900 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-03-05T11:42:12.170+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2017-03-05T11:42:12.170+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-03-05T11:42:12.170+0900 I CONTROL  [initandlisten] options: { storage: { dbPath: "mongodb\data" }, systemLog: { destination: "file", path: "mongodb\mongodb.log" } }
+2017-03-05T11:42:12.172+0900 W -        [initandlisten] Detected unclean shutdown - mongodb\data\mongod.lock is not empty.
+2017-03-05T11:42:12.181+0900 I -        [initandlisten] Detected data files in mongodb\data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-03-05T11:42:12.183+0900 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-03-05T11:42:12.184+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1491M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-03-05T11:42:14.874+0900 I CONTROL  [initandlisten] 
+2017-03-05T11:42:14.875+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-03-05T11:42:14.875+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-03-05T11:42:14.875+0900 I CONTROL  [initandlisten] 
+2017-03-05T11:42:14.875+0900 I CONTROL  [initandlisten] Hotfix KB2731284 or later update is not installed, will zero-out data files.
+2017-03-05T11:42:14.875+0900 I CONTROL  [initandlisten] 
+2017-03-05T11:42:18.020+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'mongodb/data/diagnostic.data'
+2017-03-05T11:42:18.061+0900 I NETWORK  [thread1] waiting for connections on port 27017
+2017-03-05T11:56:14.611+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:52397 #1 (1 connection now open)
+2017-03-05T11:56:14.653+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:52397 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2017-03-05T12:19:09.002+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:53041 #2 (2 connections now open)
+2017-03-05T12:19:09.041+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:53041 conn2: { driver: { name: "nodejs", version: "2.2.24" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.8" }
+2017-03-05T12:19:09.296+0900 I COMMAND  [conn2] command day5.user command: insert { insert: "user", documents: [ { user_id: "test", status: "logout", _id: ObjectId('58bb83ad5489d4262c383890') } ], ordered: true } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 135ms
+2017-03-05T12:19:13.724+0900 I -        [conn2] end connection 127.0.0.1:53041 (2 connections now open)
+2017-03-05T14:37:34.079+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:57823 #3 (2 connections now open)
+2017-03-05T14:37:34.110+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:57823 conn3: { driver: { name: "nodejs", version: "2.2.24" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.8" }
+2017-03-05T14:37:34.182+0900 I -        [conn3] end connection 127.0.0.1:57823 (2 connections now open)
+2017-03-05T15:23:56.760+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:59818 #4 (2 connections now open)
+2017-03-05T15:23:56.788+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:59818 conn4: { driver: { name: "nodejs", version: "2.2.24" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.8" }
+2017-03-05T15:44:06.018+0900 I -        [conn4] end connection 127.0.0.1:59818 (2 connections now open)
+2017-03-05T15:45:00.825+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:60699 #5 (2 connections now open)
+2017-03-05T15:45:00.869+0900 I NETWORK  [conn5] received client metadata from 127.0.0.1:60699 conn5: { driver: { name: "nodejs", version: "2.2.24" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.8" }
+2017-03-05T17:15:48.591+0900 I -        [conn5] end connection 127.0.0.1:60699 (2 connections now open)
+2017-03-05T17:18:04.862+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:50354 #6 (2 connections now open)
+2017-03-05T17:18:04.891+0900 I NETWORK  [conn6] received client metadata from 127.0.0.1:50354 conn6: { driver: { name: "nodejs", version: "2.2.24" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.1.7601" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.8" }
+2017-03-05T17:26:56.015+0900 I -        [conn6] end connection 127.0.0.1:50354 (2 connections now open)
+2017-03-05T17:27:06.470+0900 I -        [conn1] end connection 127.0.0.1:52397 (1 connection now open)
+2017-03-05T17:27:27.284+0900 I CONTROL  [thread2] Ctrl-C signal
+2017-03-05T17:27:27.316+0900 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2017-03-05T17:27:27.325+0900 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2017-03-05T17:27:27.345+0900 I NETWORK  [consoleTerminate] closing listening socket: 432
+2017-03-05T17:27:27.367+0900 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2017-03-05T17:27:27.390+0900 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2017-03-05T17:27:27.459+0900 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2017-03-05T17:27:27.774+0900 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2017-03-05T17:27:27.800+0900 I CONTROL  [consoleTerminate] now exiting
+2017-03-05T17:27:27.848+0900 I CONTROL  [consoleTerminate] shutting down with code:12
